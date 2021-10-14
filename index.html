@@ -6,12 +6,15 @@
     <body>
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
-
+            
+            <!-- Amount box -->
             Amount <input type="number"  id="principal" onchange="onPrincipalInput()">  <br/>
 
+            <!-- Rate slider and display span elements. Uses updateRate js function to display the slider value -->
             Rate <input type="range"  id="rate" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()"> 
             <span id="rate_val">10.25%</span>  <br/>
-
+            
+            <!-- Dropdown menu for years 1-10 -->
             No. of Years <select  id="years">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -25,14 +28,17 @@
                 <option value="10">10</option>
             </select> <br/>
 
+            <!-- Interest results -->
             Interest : <span id="result"></span><br>
-
+            
+            <!-- Compute button which triggers the compute js function -->
             <button onclick="compute()">Compute Interest</button>
 
             <footer>
                 &#169; This Calculator belongs to James
             </footer>
 
-        </div>  
+        </div> 
+        
     </body>
 </html>
