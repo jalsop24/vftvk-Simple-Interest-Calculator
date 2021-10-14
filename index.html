@@ -11,10 +11,10 @@
             <h1>Simple Interest Calculator</h1>
             
             <!-- Amount box -->
-            Amount <input type="number"  id="principal" onchange="onPrincipalInput()">  <br/>
+            Amount <input type="number"  id="principal">  <br/>
 
             <!-- Rate slider and display span elements. Uses updateRate js function to display the slider value -->
-            Rate <input type="range"  id="rate" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()"> 
+            Rate <input type="range"  id="rate" min="1" max="20" value="10.25" step="0.25" oninput="updateRate()"> 
             <span id="rate_val">10.25%</span>  <br/>
             
             <!-- Dropdown menu for years 1-10 -->
