@@ -8,7 +8,7 @@ function compute()
 
     // Perform Amount box validation, focus them on the relevant box
     if (principal <= 0){
-        alert("Please enter a number greater than 0.")
+        alert("Please enter a positive number.")
         document.getElementById("principal").focus()
         return
     }
