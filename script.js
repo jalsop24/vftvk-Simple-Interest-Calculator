@@ -9,9 +9,9 @@ function compute()
 
     if (principal <= 0){
         alert("Please enter a number greater than 0.")
+        document.getElementById("principal").focus()
         return
     }
-
 
 
     var interest = principal * years * rate /100;
